@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Add Form</title>
+</head>
+
+<body style="background-color: hotpink;">
+	<div align="center">
+		<form action="add-record" method="post">
+			<table border="1">
+
+				<tr>
+					<th><label>Employee Name</label></th>
+					<td><input type="text" required name="employeeName" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Address</label></th>
+					<td><input type="text" required name="Address" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Phone</label></th>
+					<td><input type="tel" required name="employeePhone" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Salary</label></th>
+					<td><input type="number" required name="employeeSalary" /></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Save..</button></td>
+					<td><button type="reset">Reset...</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory> 
+		
+		<!-- JDBC Database  connection setting-->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		
+		<!-- Make sure that you provide available database name in below path-->
+		<property name="connection.url">jdbc:mysql://localhost:3306/gradedassainmentweek14</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">9335</property>
+		
+		<!-- Select our SQL dialect-->
+		<!-- If you are using mysql 5, change MYSQL8Dialect to MYSQL5Dialect-->
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		
+		<!-- Echo the SQL to stdout-->
+		<property name="show_sql">true</property>
+		
+		<!-- Set the current session context-->
+		<property name="current_session_context_class">thread</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- Below is the path to entity classes. If your entity class is in different -->
+		<!-- All your entity classes shoulbe be mapped here-->
+		<mapping class="com.great.model.Employee"/>
+		
+    
+   </session-factory>
+
+</hibernate-configuration>

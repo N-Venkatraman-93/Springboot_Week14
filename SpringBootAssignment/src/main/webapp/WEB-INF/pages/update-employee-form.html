@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>update function</title>
+</head>
+
+<body style="background-color: orange;">
+
+
+	<div align="center">
+		<form action="update-save-employee" method="post">
+			<table border="1">
+				<tr>
+					<th><label>Id</label></th>
+					<td><input type="text" readonly name="id" th:value="${employee.id}" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Name</label></th>
+					<td><input type="text" name="employeeName" th:value="${employee.employeeName}" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Address</label></th>
+					<td><input type="text" name="Address" th:value="${employee.Address}" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Phone</label></th>
+					<td><input type="number" required name="employeePhone" th:value="${employee.employeePhone}" /></td>
+				</tr>
+				<tr>
+					<th><label>Employee Salary</label></th>
+					<td><input type="number" required name="employeeSalary" th:value="${employee.employeeSalary}" />
+					</td>
+				</tr>
+				<tr>
+					<td><button type="submit">Save..</button></td>
+					<td><button type="reset">Reset...</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
